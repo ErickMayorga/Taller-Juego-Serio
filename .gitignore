@@ -50,7 +50,8 @@ ExportedObj/
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
-*.asset.meta
+# Unity generated meta files that I agree to ignore
+*.asset.meta 
 
 # Unity3D generated file on crash reports
 sysinfo.txt
@@ -62,7 +63,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-#Default 
+# I triedo to ignore this fields by myself, but it seems that it is not enough
 default-2021.dwlt
 
 EditorUserSettings.asset
