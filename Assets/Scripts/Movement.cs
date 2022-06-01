@@ -17,11 +17,17 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey("a") || Input.GetKey("left")) {
             body.velocity = new Vector2(-speed, body.velocity.y);
+            GetComponent<SpriteRenderer>().flipX = true;
         } else if (Input.GetKey("d") || Input.GetKey("right"))
         {
             body.velocity = new Vector2(speed, body.velocity.y);
+            GetComponent<SpriteRenderer>().flipX = false;
         } else {
-            
+            body.velocity = new Vector2(0, body.velocity.y);
+        }
+        if (CheckGround.isGrounded && Input.GetKey("space"))
+        {
+            body.velocity = new Vector2(body.velocity.x, jumpSpeed);
         }
     }
 }
