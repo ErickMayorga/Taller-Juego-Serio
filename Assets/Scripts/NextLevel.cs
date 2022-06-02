@@ -13,11 +13,11 @@ public class NextLevel : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            if(Score.winLevel == true)
+            if(Score.winLevel)
             {
                 SceneManager.LoadScene(1);
             }else{
-                InstructionText.text = "Tienes que Destruir todas las cajas y ganas puntos";
+                InstructionText.text = "Tienes que destruir la caja correcta para ganar";
             }
         }
     }
