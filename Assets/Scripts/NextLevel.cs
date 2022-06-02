@@ -13,7 +13,7 @@ public class NextLevel : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            if(Score.points==1)
+            if(Score.winLevel == true)
             {
                 SceneManager.LoadScene(1);
             }else{
