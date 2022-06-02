@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class NextLevel : MonoBehaviour
+public class FinalLevel : MonoBehaviour
 {
     public Text InstructionText;
     // Start is called before the first frame update
@@ -15,8 +15,7 @@ public class NextLevel : MonoBehaviour
         {
             if(Score.winLevel)
             {
-                
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(3);
             }else{
                 InstructionText.text = "Tienes que destruir la caja correcta para ganar";
             }
