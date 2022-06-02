@@ -12,8 +12,6 @@ public class EcuationScript : MonoBehaviour
 
 
     private void OnTriggerEnter2D (Collider2D collision) {
-        string message = "Enter: " + collision.tag;
-        Debug.Log(message);
         if (collision.tag == "Correct") {
             winLabel.text = "Respuesta Correcta";
             winSound.Play();
@@ -25,8 +23,6 @@ public class EcuationScript : MonoBehaviour
     }
 
     private void OnTriggerExit2D (Collider2D collision) {
-        string message = "Exit: " + collision.tag;
-        Debug.Log(message);
         if (collision.tag == "Incorrect") {
             winLabel.text = "";
         }
