@@ -875,6 +875,7 @@ GameObject:
   - component: {fileID: 200967662}
   - component: {fileID: 200967665}
   - component: {fileID: 200967664}
+  - component: {fileID: 200967666}
   m_Layer: 0
   m_Name: Box3
   m_TagString: Incorrect
@@ -976,6 +977,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &200967666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200967661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d8eb7194d8fba4bad180b74400aa7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &203410864
 GameObject:
   m_ObjectHideFlags: 0
@@ -8414,7 +8427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1703868670}
   - component: {fileID: 1703868669}
-  - component: {fileID: 1703868671}
+  - component: {fileID: 1703868672}
   m_Layer: 0
   m_Name: NextLevel
   m_TagString: Untagged
@@ -8463,7 +8476,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1703868671
+--- !u!114 &1703868672
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8472,11 +8485,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1703868667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8047a0e54739b694fbbbaeb640e27f80, type: 3}
+  m_Script: {fileID: 11500000, guid: 13fc8379e034c3c4788e9184831f70eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InstructionText: {fileID: 965474562}
-  Text: Tienes que destruir la caja correcta para ganar
 --- !u!1 &1729862527
 GameObject:
   m_ObjectHideFlags: 0
