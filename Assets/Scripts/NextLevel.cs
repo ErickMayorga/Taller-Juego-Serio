@@ -16,6 +16,8 @@ public class NextLevel : MonoBehaviour
             if(Score.winLevel)
             {
                 Score.level = Score.level + 1;
+                Score.numWrong = 0;
+                Score.winLevel = false;
                 SceneManager.LoadScene(Score.level);
             }else{
                 InstructionText.text = "Tienes que destruir la caja correcta para ganar";
