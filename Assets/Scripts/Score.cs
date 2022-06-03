@@ -14,4 +14,7 @@ public class Score : MonoBehaviour
     // aqui se guarda si se rompió la caja correcta
     public static bool winLevel = false;
 
+    // aqui se guarda el nivel actual
+    public static int level = 0;
+
 }
